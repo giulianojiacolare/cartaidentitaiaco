@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .id-card {
+    background-color: white;
+    border: 1px solid #0074d9;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .photo {
+    max-width: 100px; /* Imposta la larghezza al 100% per adattarsi al contenitore */
+    border-radius: 50px;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #0074d9;
+  }
+  
+  .info {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .info p {
+    margin: 5px 0;
+  }
+  
+  .info b {
+    color: #0074d9;
+  }
+  
+  .info span {
+    color: black;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="id-card">
+  <img src="https://media.meer.com/attachments/6cb905b85ad311d6acc81e537cbda6e553e0d299/store/fill/860/645/a10d4610745a1ed7ab0d925e1d9f682ab7e6486c96f7493b7e978bdf9568/Linfanticidio-nelle-scimmie-non-e-una-rarita.jpg" alt="foto di Giuliano Iacolare" class="photo">
+  <h1>Carta d'Identità Italiana</h1>
+  <div class="info">
+    <p><b>Nome:</b> <span id="Nome"></span></p>
+    <p><b>Cognome:</b> <span id="Cognome"></span></p>
+    <p><b>Data di nascita:</b> <span id="DataDiNascita"></span></p>
+    <p><b>Luogo di nascita:</b> <span id="LuogoDiNascita"></span></p>
+    <p><b>Codice fiscale:</b> <span id="CodiceFiscale"></span></p>
+    <p><b>Indirizzo:</b> <span id="Indirizzo"></span></p>
+    <p><b>Città:</b> <span id="Città"></span></p>
+    <p><b>Provincia:</b> <span id="Provincia"></span></p>
+    <p><b>CAP:</b> <span id="CAP"></span></p>
+    <p><b>Data di emissione:</b> <span id="DataDiEmissione"></span></p>
+    <p><b>Data di scadenza:</b> <span id="DataDiScadenza"></span></p>
+  </div>
+</div>
+<script>
+  fetch('idcart.json')
+    .then((response) => response.json())
+    .then((json) => {
+      document.getElementById("Nome").innerHTML = json.nome;
+      document.getElementById("Cognome").innerHTML = json.cognome;
+      document.getElementById("DataDiNascita").innerHTML = json.data_di_nascita;
+      document.getElementById("LuogoDiNascita").innerHTML = json.luogo_di_nascita;
+      document.getElementById("CodiceFiscale").innerHTML = json.codice_fiscale;
+      document.getElementById("Indirizzo").innerHTML = json.indirizzo;
+      document.getElementById("Città").innerHTML = json.citta;
+      document.getElementById("Provincia").innerHTML = json.provincia;
+      document.getElementById("CAP").innerHTML = json.cap;
+      document.getElementById("DataDiEmissione").innerHTML = json.data_di_emissione;
+      document.getElementById("DataDiScadenza").innerHTML = json.data_di_scadenza;
+    });
+</script>
+</body>
+</html>
